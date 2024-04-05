@@ -130,11 +130,20 @@ section:nth-child(1)>menu>nav>a>img {
 
 footer
 {
+  width: 100%;
   align-items: center;
   text-align: center;
 }
+.bcCard{
+  align-items: center;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
 
-
+.info{
+  width: 100%;
+}
 
 audio {
   width: var(--maxW);
