@@ -51,17 +51,17 @@ section:nth-child(1)>h4 {
   justify-self: center;
 }
 section:nth-child(1)>menu {
-  display: var(--f);
-  flex-flow: var(--cnw);
-  align-items: var(--fs);
-  justify-content: var(--c);
+  display: table-row;
+  flex-flow:nowrap;
+  align-items: center;
+  justify-content :baseline;
   width: calc(var(--head) x 2.2);
   height: calc(var(--head) x 10);
   margin-top: calc(var(--head) / 1.2);
   padding: 0;
 }
 section:nth-child(1)>menu>nav {
-  display: var(--f);
+  display:block;
   flex-flow: var(--rnw);
   align-items: var(--c);
   justify-content: var(--fs);
@@ -94,6 +94,47 @@ section:nth-child(1)>menu>nav>a>img {
   margin-right: calc(var(--head) / 2);
   filter: invert(2) brightness(.8);
 }
+
+.lightDarkButton
+{
+  background-color: #9dd0df;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #17596d;
+  border: none;
+  width: 55%;
+  height: 10%;
+}
+
+.promoButtons
+{
+  display: table-row;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.audioButton
+{
+  border: none;
+  border-radius: 20px;
+  color: #17596d;
+  background-color: #9dd0df;
+  width: 120px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+footer
+{
+  align-items: center;
+  text-align: center;
+}
+
+
 
 audio {
   width: var(--maxW);
