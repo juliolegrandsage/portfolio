@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(isDblClick);
     })
 
+    
 
     function getRandomColor() {
     // Générer trois composantes de couleur aléatoires (rouge, vert, bleu)
@@ -88,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-
     })
 
     function clock()
@@ -99,22 +99,16 @@ document.addEventListener('DOMContentLoaded', function() {
         var h = date.getHours();
         var m = date.getMinutes();
         var s = date.getSeconds();
-        if(s > 10)
-        {
-            time.innerText = h + " : " + m + " : " + s;
-        }
-        else
-        {
-            time.innerText = h + " : " + m + " : " + "0" + s;
-
-        }
+        time.innerText = h + " : " + m + " : " + s;
+        
     }
+    
 
     
     clock();
     setInterval(clock, 1000);
 
-
+    
 
 });
 
