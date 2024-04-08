@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,28 +11,39 @@
 
 <body id="body">
     <header>
-        <h1>Portfolio</h1>
+        <h1><a href="" id="title">Portfolio</a></h1>
+
     </header>
+    <div class="options" id="options">
+        <button class="lightDarkButton" id="lightDarkButton">🌞</button>
+    </div>
+
     <main id="main">
-        <section>
-            <button class="lightDarkButton" onclick='darkLight()' id="lightDarkButton">Light</button>
+
+        <section id="section">
             <menu>
-                <nav><a href="https://github.com/forEachLoopz" target="_blank" class="midText">GitHub</a></nav>
-                <nav><a href="https://juliolgs.itch.io/" target="_blank" class="midText">Itch.io</a></nav>
-                <nav><a href="https://bisrian.bandcamp.com/" target="_blank" class="midText">BandCamp</a></nav>
-                <nav><a href="https://www.youtube.com/@Studio_Petillant" target="_blank" class="midText">YouTube</a></nav>
+                <p class="time" id="time"></p>
+                <p class="date" id="date"></p>
+                <nav><a href="https://github.com/forEachLoopz" target="_blank" class="midText">💻 GitHub</a></nav>
+                <nav><a href="https://juliolgs.itch.io/" target="_blank" class="midText">🎮 Itch.io</a></nav>
+                <nav><a href="https://bisrian.bandcamp.com/" target="_blank" class="midText">🎵 BandCamp</a></nav>
+                <nav><a href="https://www.youtube.com/@Studio_Petillant" target="_blank" class="midText">📷 YouTube</a></nav>
             </menu>
         </section>
 
     </main>
     <div class="promoButtons">
         <button class="audioButton" id="audioButton">Stream / Buy "Inner War"</button>
+
         <button class="audioButton" id="youtubeBisrian">See Bisrian's YouTube channel</button>
-        
-    </div>
+    </div>        
+
+    
+    
+
     <footer class="footer" id="footer">
 
-        <p id="mousePos">0, 0</p>
+        <p class="credits">Fabriqué par <a href="https://github.com/forEachLoopz">forEach</a></p>
     </footer>
     <script src="script.js"></script>
     <script src="background.js"></script>
