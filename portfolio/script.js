@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const main = document.getElementById('main');
     const footer = document.getElementById('footer');
 
+    const money = document.getElementById('money');
+
+    let moneynumber = 0;
+
     let isDark = true;
     let isDblClick = false;
 
@@ -18,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(isDblClick);
     })
 
-    
+
+
 
     function getRandomColor() {
     // Générer trois composantes de couleur aléatoires (rouge, vert, bleu)
@@ -47,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const bcButton = document.getElementById("audioButton");
     bcButton.addEventListener("click", document =>{
-        window.open("https://bisrian.bandcamp.com/track/inner-war");
+        window.open("https://bisrian.bandcamp.com/album/underground-dogs-3");
     })
     const ytButton = document.getElementById("youtubeBisrian");
     ytButton.addEventListener("click", document =>{
@@ -99,11 +104,17 @@ document.addEventListener('DOMContentLoaded', function() {
         var h = date.getHours();
         var m = date.getMinutes();
         var s = date.getSeconds();
-        time.innerText = h + " : " + m + " : " + s;
+        if(s <= 9){
+            time.innerText = h + " : " + m + " : " + "0" + s;
+        }
+        else{
+            time.innerText = h + " : " + m + " : " + s;
+        }
         
     }
     
-
+    moneycounter();
+    setInterval(moneycounter, 100);
     
     clock();
     setInterval(clock, 1000);
