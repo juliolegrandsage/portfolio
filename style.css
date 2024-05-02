@@ -1,4 +1,6 @@
 @import url(./variables.css);
+
+
 html {
   font-family: var(--pol);
 }
@@ -12,6 +14,7 @@ body {
   margin: var(--z);
   padding: var(--z);
   background-color: var(--bgMain);
+  user-select: none;
 }
 
 header {
@@ -34,11 +37,13 @@ header h1 a
 }
 .options
 {
-  width: 50%;
+  width: 50px;
   height: 60px;
 
   padding-top: 20px;
   padding-left: 20px;
+
+  background: transparent;
   
 }
 
@@ -157,15 +162,15 @@ section:nth-child(1)>menu>nav>a>img {
   font-size: 20px;
   color: #17596d;
   border: none;
-  width: 6%;
-  height: 75%;
+  width: 20px;
+  height: 23px;
   padding-right: 40px ;
   transition: .1s ease-in;
 }
 
 .lightDarkButton:nth-child(1):hover
 {
-  width: 7%;
+  width: 22px;
 }
 
 .promoButtons
@@ -208,7 +213,6 @@ footer
   background-color: hsla(210, 7%, 17%, .9);
 }
 
-
 .bcCard{
   align-items: center;
   text-align: center;
@@ -219,8 +223,6 @@ footer
 .info{
   width: 100%;
 }
-
-
 
 footer p
 {
@@ -236,8 +238,6 @@ footer a
   color: rgb(255, 255, 255);
   transition: .2s ease-in-out;
 }
-
-
 
 .credits
 {

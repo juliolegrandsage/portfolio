@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(isDblClick);
     })
 
-
+    
 
 
     function getRandomColor() {
@@ -31,10 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
     return color;
     }
-
-
-
-
     
     lightDarkButton.addEventListener("dblclick", document =>
     {
@@ -55,7 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
     ytButton.addEventListener("click", document =>{
         window.open("https://www.youtube.com/@bisrianmusic");
     }) 
+    const wsButton = document.getElementById("websiteBisrian");
+    wsButton.addEventListener("click", function()
+    {
+        window.open("https://foreachloopz.github.io/bisrianwebsite/");
+    })
 
+    
 
 
     lightDarkButton.addEventListener("click", function(e)   
@@ -109,12 +111,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
     }
-    
-    moneycounter();
-    setInterval(moneycounter, 100);
-    
+
     clock();
     setInterval(clock, 1000);
+
 
     
 
