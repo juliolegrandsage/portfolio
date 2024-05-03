@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.addEventListener("dblclick", function()
     {
-        title.innerText = "✌️Porfolio✌️"
+        title.innerText = "f҉o҉r҉E҉a҉c҉h҉L҉o҉o҉p҉z҉";
         isDblClick = true;
         console.log(isDblClick);
     })
