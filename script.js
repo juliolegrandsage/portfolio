@@ -2,9 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightDarkButton = document.getElementById('lightDarkButton');
     const body = document.getElementById('body');
     const footer = document.getElementById('footer');
-
+    const youtubeChannelBtn = document.getElementById('youtubeBisrian');
     let isDark = true;
 
+    youtubeChannelBtn.addEventListener("click", function(e){
+        window.open("https://www.youtube.com/@bisrianmusic")
+    })
+    
     lightDarkButton.addEventListener("click", function(e) {
         if(isDark) {
             isDark = false;
@@ -14,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             lightDarkButton.style.backgroundColor = '#2e373a';
             lightDarkButton.style.color = '#b9babb';
             lightDarkButton.innerText = '🌑';
-            footer.style.backgroundColor = 'hsla(410, 50%, 27%, .9)'; // Correction : pas de ;
+            footer.style.backgroundColor = 'hsla(210, 7%, 17%, .9)'; // Correction : pas de ;
             lightDarkButton.style.paddingLeft = '10px';
             lightDarkButton.style.paddingRight = '0px';
 
